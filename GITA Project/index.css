@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+}
+.movies {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: center;
+}
+.movies > div {
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: rgb(0 0 0 / 7%) 0px 20px 20px 0px;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+.movies > div:hover {
+  transform: scale(1.05);
+}
+
+.movies > div .title-wrapper {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.movies > div .title-wrapper .title {
+  font-weight: bold;
+}
+.movies > div .title-wrapper .overView {
+  font-style: italic;
+}
+.movies div img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.movies .imgWrapper {
+  max-height: 175px;
+  height: 100%;
+}
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.search-wrapper div {
+  display: flex;
+  max-width: 450px;
+  width: 100%;
+}
+.search-wrapper input,
+button {
+  height: 35px;
+}
+.search-wrapper input {
+  border: 1px solid dodgerblue;
+  padding: 8px;
+  font-size: 20px;
+}
+.search-wrapper button {
+  padding: 0 15px;
+  background-color: crimson;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  color: #f2f2f2;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+}
